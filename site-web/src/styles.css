@@ -1,0 +1,39 @@
+body{
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+} 
+
+html {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  background-image: url('pexels-bess-hamiti-83687-36487.jpg'); /* Path to your background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: fixed; /* Fixed position to keep the background stationary */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0; /* Top position */
+  left: 0; /* Left position */
+  z-index: -1; /* Set z-index to -1 to keep it behind other elements */
+}
+
+.intro{
+  color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgb(58, 111, 246);
+  font-size: 40px;
+}
+
+.intro > div {
+  line-height: 1.2; /* Ajustez cette valeur selon vos besoins */
+}
