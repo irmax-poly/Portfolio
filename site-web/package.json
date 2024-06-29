@@ -1,19 +1,23 @@
 {
-  "name": "20233-tp1",
+  "name": "20241-tp3",
   "version": "1.0.0",
-  "description": "Travaux pratiques pour les étudiants du cours LOG2440 de la session AUT23",
-  "main": "index.js",
+  "description": "Irina's Portfolio",
   "scripts": {
-    "start": "http-server -a localhost -p 3000 -c-1 -o src/profiles.html",
-    "test:headless": "cypress run --browser chrome",
-    "test": "cypress open"
+    "start": "http-server -a localhost -p 3000 -c-1 -o src/home.html", 
+    "lint": "eslint ./",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --env=jsdom --verbose"
   },
-  "author": "LOG2440",
+  "author": "Irina Maximciuc",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "http-server": "^14.1.1"
   },
   "devDependencies": {
-    "cypress": "^13.6.1"
+    "@babel/preset-env": "^7.23.9",
+    "eslint": "8.56.0",
+    "eslint-plugin-import": "2.28.1",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
