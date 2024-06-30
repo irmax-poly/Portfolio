@@ -1,0 +1,76 @@
+/*SANS CETTE SECTION "MEDIA", LE SITE DEVIENT NON RESPONSIVE => CSS DEVIENT FUCKED UP!!!! */
+/* Styles for small screens (mobile devices) */
+@media (max-width: 599px) {
+  body {
+      background-color: #ffffff;
+  }
+}
+
+/* Styles for medium screens (tablets, small laptops) */
+@media (min-width: 600px) and (max-width: 1199px) {
+  body {
+      background-color: #ffffff;
+  }
+}
+
+/* Styles for large screens (desktops, large laptops) */
+@media (min-width: 1200px) {
+  body {
+      background-color: #ffffff;
+  }
+}
+
+/*body {
+  background-color: #B9CAD2;
+}*/
+
+header { /*est override*/
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  gap: 1%;
+  background-color: #B9CAD2;
+}
+
+#logoimg{
+  width: 7%;
+  height: auto;
+  margin-right: 1%; /*espace entre logo, nom*/
+  margin-left: 1%;
+}
+
+#name {
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px; /* Taille de police ajustée */
+  font-weight: bold;
+  margin-right: 33%; /* Espacement à gauche du nom */
+}
+
+#headerlist{
+  display: inline-flex;
+  align-items: flex-start;  
+  gap: 45px;
+  margin-left: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#headerlist a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* ABOUT SECTION */
+
+#aboutimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
