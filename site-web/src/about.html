@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <aside>
+      <ul class="links">
+        <li>
+          <a href="">About</a>
+        </li>
+        <li onclick="navigate()[1]">
+          <p>Skills</p>
+        </li>
+        <li onclick="navigate()[2]">
+          <p>Projects</p>
+        </li>
+        <li onclick="navigate()[4]">
+          <p>Experience</p>
+        </li>
+        <li onclick="navigate()[5]">
+          <p>Services</p>
+        </li>
+        <li onclick="navigate()[6]">
+          <p>Contact</p>
+        </li>
+        <a href="\skills.html"></a>
+      </div>
+  </aside>
+    <main class="about-container">
+      <div class="about-bio">
+        <h2>Computer Engineering student ready to innovate</h2>
+        <p>Passionate about computer science and motivated to take on new challenges. My goal is to find a stimulating job in the industry.</p>
+      </div>
+    </main>
+
+      <script>
+        const navigate = function() {
+          return {
+            0: "\about.html",
+            1: "\skills.html",
+            2: "\projects.html",
+            3: "\experience.html",
+            4: "\services.html",
+            5: "\contact.html"
+          }
+        }
+  
+      </script>
+  </body>
+</html>

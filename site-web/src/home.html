@@ -1,54 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/home.js" type="module" defer></script>
-    <title>Irina's Portfolio</title>
-</head>
-
-<body>
-    <main>
-        <header>
-            <img id="logoimg" src="assets/img/logo_final.jpeg">
-            <h2 id="name">Irina Maximciuc</h2>
-            <div id="headerlist">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </header>
-
-        <main>
-            <section id="about">
-                <img id="aboutimg" src="assets\img\aboutimg.jpg">
-
-
-            </section>
-
-            <section id="skills">
-                
-            </section>
-
-            <section id="projects">
-                
-            </section>
-
-            <section id="experience">
-                
-            </section>
-
-            <section id="contact">
-                
-            </section>
-        </main>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Hover</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class='card'>
+        <div class='card-container'>
+          <div class='bio'>
+            <h2>Irina Maximciuc</h2>
+            <p>Computer Engineer</p>
+          </div>
+          <ul class='data'>
+            <li> 
+              <span class='count'>3.20</span>
+              <span class='type'>GPA</span>
+            </li>
+            <li>
+              <span class='count'>X</span>
+              <span class='type'>Projects</span>
+            </li>
+            <li>
+              <span class='count'>???</span>
+              <span class='type'>???</span>
+            </li>
+          </ul>
+          <div class='cta'>
+            <button class='follow' onclick="aboutPage('click')">Learn More</button>
+          </div>
+        </div>
+      </main>
+      <script>
+        /*
+        i2.addEventListener('click', () => {
+          window.location.href = `detail.html?id=${note.id}`;
+        });*/
+        
+        function aboutPage(event){
+          window.location.href = 'about.html';
+        }
         
 
-    </main>
-</body>
-
+      </script>
+  </body>
 </html>

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Irina's Portfolio",
   "scripts": {
-    "start": "http-server -a localhost -p 3000 -c-1 -o src/home.html", 
+    "start": "http-server -a localhost -p 5000 -c-1 -o src/home.html", 
     "lint": "eslint ./",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --env=jsdom --verbose"
   },
