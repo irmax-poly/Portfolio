@@ -1,0 +1,133 @@
+<div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+
+          <ul id="menu">
+            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+          </ul>
+
+          <div class="page" id="p1">
+
+            <section class="icon fa fa-bolt">
+              <span class="title">Bolt</span>
+              <span class="hint">Like this pen to see the magic!...<br> Just kidding, it won't happen anything but I'll be really happy If you do so.
+              </span>
+            </section>
+          </div>
+
+          <div class="page" id="p2">
+            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+          </div>  
+
+          <div class="page" id="p3">
+            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+          </div>
+
+          <div class="page" id="p4">
+            <section class="icon fa fa-dribbble">
+              <span class="title">Dribbble</span>
+              <p class="hint">
+                <a href="https://dribbble.com/hrtzt" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
+              </p>
+              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+            </section>
+          </div> 
+
+          <div class="page" id="p5">
+            <section class="icon fa fa-plus-circle">
+              <span class="title">More</span>
+              <p class="hint">
+                <span>You love one page & CSS only stuff? </span><br/>
+                <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
+              </p>
+            </section>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+  .square {
+    cursor: pointer;
+    border: solid 0px transparent;
+    padding: 120px;
+    width: 100%; 
+    height: 100%;
+    transform: translate3d(-50%,-50%,0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(230deg,#a24bcf,#4b79cf,#4bc5cf);
+    background-clip: content-box;
+    background-size: 400% 400%;
+    border-color: currentColor; 
+    animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;  
+    transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: transform;
+  }
+  
+  @keyframes partytime { 
+      0%{background-position:83% 0%}
+      50%{background-position:18% 100%}
+      100%{background-position:83% 0%}
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+      filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
+    will-change: transform;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 400;
+    &:hover {
+      box-shadow: 0 0 75px rgba(0, 0, 0, 0.20), 0 5px 20px rgba(0, 0, 0, 0.2);    
+      mix-blend-mode: hard-light;
+      filter: grayscale(100%);
+      opacity: 0.8;
+    }
+  }
+  
+  .card-title-wrap {
+    transform: perspective(1600px) translate3d(0, 0, 100px);
+    position: relative;
+    z-index: 200;
+    transition: transform 0.25s linear;
+  }
+  
+  .card-img {
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: 50% 50%;
+    background-image: url(https://www.pauldecotiis.com/assets/img/contact/img-1.jpg?ts=1509977393);
+      will-change: transform;
+    transform: perspective(600px);
+    z-index: 100;
+    // opacity: 0.4;
+    // display: none;
+  }
+  
+</style>
+
+ 
