@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Irina's Portfolio</title>
     <link rel="stylesheet" href="stylesHome.css">
+
+    <!--<style>
+        .nav-bar {
+            visibility: visible;
+            width: 280px;
+            height: 100vh;
+            background-color: rgba(255, 0, 0, 0.5);
+            border: 2px solid red;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>-->
   </head>
   <body>
-    <main class='card'>
+    <section id='home'>
+      <div class="card">
         <div class='card-container'>
           <div class='bio'>
             <h2>Irina Maximciuc</h2>
@@ -28,21 +43,189 @@
             </li>
           </ul>
           <div class='cta'>
-            <button class='follow' onclick="aboutPage('click')">Learn More</button>
+            <a class='learn-more-btn' href="#about" >Learn More</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <div class="nav-bar">
+      <a href="#home">
+        <img class="main-picture" src="female.png" alt="icone-principale">
+      </a>
+      <ul class="links">
+        <li>
+          <!-- <a href="#about"> provoque un probleme-->
+            <img class="logo" src="id-card.png" alt="img">
+          <!-- </a> -->
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <img class="logo" src="skill.png" alt="img">
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <img class="logo" src="layers.png" alt="img">
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <img class="logo" src="briefcase.png" alt="img">
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <img class="logo" src="review.png" alt="img">
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <img class="logo" src="phone-call.png" alt="img">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--sections-->
+          
+    <section id="about">
+      <h1 class="about-title">About Me</h1>
+        <span class="intro-sentence intro">Hi, I am Irina, a second-year Computer Engineer</span>
+        <span class="intro-paragraph intro">As a second-year Computer Engineering student at Polytechnique Montréal, I am driven to excel in the field of computer science, particularly in robotics and cybersecurity. As a dedicated and passionate student, I seek to apply my skills in problem-solving and the development of emerging technologies. My goal is to make a significant contribution to technological advancement while expanding my expertise within dynamic teams. I am determined to leverage my quick learning ability and adaptability to tackle technical challenges and progress in my career as a computer engineer.
+        I am constantly seeking new challenges and opportunities to learn, believing that innovation arises from embracing change and thinking creatively. With a strong foundation in programming and system design, I am eager to collaborate with professionals who share my enthusiasm for cutting-edge technologies. Whether it's developing efficient algorithms or ensuring the security of complex systems, I am committed to applying my knowledge and skills to create impactful solutions. My ultimate aspiration is to bridge the gap between technology and society, driving advancements that benefit both industry and the broader community.
+        </span>
+      <ul class="about-data">
+        <li>
+          <span class="title"> Name </span>
+          <span class="info">Irina Maximciuc</span>
+        </li>
+        <li>
+          <span class="title"> Experience </span>
+          <span class="info">1+ year</span>
+        </li>
+        <li>
+          <span class="title"> Age </span>
+          <span class="info">21y.o. </span>
+        </li>
+        <li>
+          <span class="title"> Native Country </span>
+          <span class="info">Moldova</span>
+        </li>
+        <li>
+          <span class="title"> Known Languages </span>
+          <span class="info">English</span>
+          <span class="info">French</span>
+          <span class="info">Russian</span>
+          <span class="info">Romanian</span>          
+        </li>
+        <li>
+          <span class="title"> Country </span>
+          <span class="info">Canada </span>
+        </li>
+        <li>
+          <span class="title"> Phone </span>
+          <span class="info">514-773-2003</span>
+        </li>
+        <li>
+          <span class="title"> School Attended </span>
+          <span class="info">École Polytechnique de Montréal</span>
+        </li>
+        <li>
+          <span class="title"> Degree In Progress </span>
+          <span class="info">Computer Science Engineer</span>
+        </li>
+        <li>
+          <span class="title"> Availability </span>
+          <span class="info">24/7 </span>
+        </li>
+        <li>
+          <span class="title"> Hobbies </span>
+          <span class="info">Figure Skating & LeetCode</span>
+        </li>
+        <li>
+          <span class="title"> Current Job </span>
+          <span class="info">Waiteress</span>
+          <span class="info">Hospital Secretary</span>
+          <span class="info">Figure Skating Coach</span>
+        </li>
+        <!--
+        <li>
+          <span class="title">Programming Languages: </span>
+          <span class="info"></span>
+        </li>
+        -->
+
+      </ul>
+      
     
-    </main>
+    </section>
+    
+    <section id="skills">
+      <h1>Skills</h1>
+        
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+        
+    </section>
+
+    <section id="experience">
+      <h1>Experience</h1>
+    
+    </section>
+
+    <section id="services">
+      <h1>Services</h1>
+        
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+    </section>
+
     <script>
       /*
       i2.addEventListener('click', () => {
         window.location.href = `detail.html?id=${note.id}`;
       });*/
+
+      let homeButton = false;
       
-      function aboutPage(event){
-        window.location.href = 'content.html';
-      }
+      /*
+      function aboutPage() {
+        window.location.href = '#about';
+        const nav = document.querySelector(".nav-bar");
+        nav.style.visibility = 'visible';
+        
+      };
+      */
       
+      /*
+      document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.querySelector('.nav-bar');
+        const homeSection = document.getElementById('home');
+        navbar.style.visibility = 'visible';
+        
+        function toggleNavbar() {
+            const homeSectionVisible = homeSection.getBoundingClientRect().top < window.innerHeight && homeSection.getBoundingClientRect().bottom > 0;
+            /*
+            console.log(homeSection.getBoundingClientRect().top);
+            console.log(window.innerHeight);
+            console.log(homeSection.getBoundingClientRect().bottom);
+            console.log('Home Section Visible:', homeSectionVisible);
+            ...
+            if (homeSectionVisible) {
+                navbar.style.visibility = 'hidden';
+            } else {
+                navbar.style.visibility = 'visible';
+            }
+        }
+    
+        //window.addEventListener('scroll', toggleNavbar);
+        window.addEventListener('hashchange', toggleNavbar);
+    
+        // Initial check
+        toggleNavbar();
+    });
+    */
 
     </script>
   </body>
