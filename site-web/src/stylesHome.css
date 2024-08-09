@@ -326,13 +326,29 @@ section:not(#home) > h1:after, section:not(#home) > h1:before {
       opacity: 0.8;
       font-weight: bold;
       font-size: 14px;
+      padding-bottom: 0%;
+
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 3px solid #a193a8;
+      opacity: 0.5; 
+      line-height: 0.1em;
+      margin: 10px 0 5px;
+
+      & span {
+        background:#fff; 
+        padding:0 10px;
+      }
 
     }
+
     
     & .info {
       color: #666666;
       flex-direction: column;
       font-size: 20px;
+      -webkit-text-stroke-width: 1px;
+      /*-webkit-text-stroke-color: black;*/
     }
   }
 }
