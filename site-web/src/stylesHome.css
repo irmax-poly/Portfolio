@@ -303,8 +303,11 @@ section:not(#home) > h1:after, section:not(#home) > h1:before {
     font-size: 18px;
   }
 
+  & .intro-paragraph {
+    padding-bottom: 4%;
+  }
+
   & ul {
-    flex-direction: column;
     column-count: 2;
     column-gap: 15px;
     overflow: hidden;
@@ -314,39 +317,62 @@ section:not(#home) > h1:after, section:not(#home) > h1:before {
     list-style-type: none;
     padding-top: 3.5%;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 
     & span {
       display: block;
 
     }
-  
+
 
     & .title {
       color: #a193a8;
       opacity: 0.8;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 12px;
       padding-bottom: 0%;
 
-      width: 100%; 
-      text-align: center; 
+      /*width: 100%; 
       border-bottom: 3px solid #a193a8;
       opacity: 0.5; 
       line-height: 0.1em;
       margin: 10px 0 5px;
 
       & span {
-        background:#fff; 
+        background:#df0202; 
         padding:0 10px;
-      }
-
+      } NOT WORKING */ 
+      
+      /* COPIED */
+      overflow: hidden;
+      text-align: center;
     }
 
-    
+    & .title::before, .title::after {
+      background-color: #a193a8;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      vertical-align: middle;
+      width: 50%;
+    }
+
+    & .title::before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    & .title::after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+
     & .info {
       color: #666666;
       flex-direction: column;
-      font-size: 20px;
+      font-size: 16px;
       -webkit-text-stroke-width: 1px;
       /*-webkit-text-stroke-color: black;*/
     }
